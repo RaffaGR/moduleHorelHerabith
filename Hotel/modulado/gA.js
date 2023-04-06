@@ -1,5 +1,5 @@
 import nomeUsuario from "./main.js"; // desnecessario, apenas serve para exnxergar o funcionamento
-
+/* var rec = nomeUsuario; */
 // carros do hotel - GasolinaAlcolica
 export function CH7() {
     var vAW = parseFloat(prompt("Qual o valor do álcool no posto Wayne Oil?"));
