@@ -35,10 +35,10 @@ export function CH7() {
         gVSa = "gasolina";
     }
     if (daGloria1 < daGloria2) {
-        deGracaDivina = daGloria2;
+        var deGracaDivina = daGloria2;
         divino = "Stark Petrol";
     } else {
-        deGracaDivina = daGloria1;
+        var deGracaDivina = daGloria1;
         divino = "Wayne Oil";
     }
 
