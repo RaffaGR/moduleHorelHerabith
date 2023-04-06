@@ -19,7 +19,7 @@ export function CH7() {
 
     // primeira tentativa sem regras - sentido inverso, pelo fato do alcool estar 30% mais barato, adicionamos 30% nela e então comparamos
     var gVSa = "";
-    divino = "";
+    var divino = "";
     var daGloria1 = 0;
     if (vAW + vAW * 0.30 > vGW) {
         daGloria1 = vAW + vAW * 0.30
