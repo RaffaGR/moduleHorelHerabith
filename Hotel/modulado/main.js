@@ -20,4 +20,5 @@ function programPrincipal() {
     }
 }
 
+export default nomeUsuario;
 programPrincipal();
