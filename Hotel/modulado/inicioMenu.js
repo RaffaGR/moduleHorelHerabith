@@ -6,7 +6,7 @@ import { CH4 } from "./lunch.js";
 import { CH5 } from "./aud.js";
 import { CH6 } from "./dSys.js";
 import { CH7 } from "./gA.js";
-import { CH8 } from "./ult.js";
+import { CH8 as ult } from "./ult.js";
 import { exit } from "./saida.js";
 
 // sistema do menu principal com reserva de quarto 1 
@@ -42,7 +42,7 @@ export function menuOptInicio() {
             CH7();
             break;
         case 8:
-            CH8();
+            ult();
             break;
         case 9:
             exit();
