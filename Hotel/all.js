@@ -392,27 +392,34 @@ var nomeUsuario;
             var vAS = parseFloat(prompt("Qual o valor do álcool no posto Stark Petrol?"));
             var vGS = parseFloat(prompt("Qual o valor da gasolina no posto Stark Petrol?"));
 
+            // var gVSa1 = "";
+            // var gVSa2 = "";
             var gVSa = "";
-            var divino = "";
             var daGloria1 = 0;
-            if (vAW > vGW * 0.70) {
+            if (vAW < vGW * 0.70) {
                 daGloria1 = vAW;
-                gVSa = "álcool";
+                // gVSa1 = "álcool";
             } else {
                 daGloria1 = vGW
-                gVSa = "gasolina";
+                // gVSa1 = "gasolina";
             }
             var daGloria2 = 0;
-            if (vAS > vGS * 0.70) {
+            if (vAS < vGS * 0.70) {
                 daGloria2 = vAS;
-                gVSa = "álcool";
+                // gVSa2 = "álcool";
             } else {
                 daGloria2 = vGS;
-                gVSa = "gasolina";
+                // gVSa2 = "gasolina";
             }
+            var divino = "";
             if (daGloria1 < daGloria2) {
                 var deGracaDivina = daGloria1;
                 divino = "Wayne Oil";
+                if (vAW < vGW * 0.70 || vAS < vGS * 0.70) {
+                    gVSa = "álcool";
+                } else {
+                    gVSa = "gasolina";
+                }
             } else {
                 deGracaDivina = daGloria2;
                 divino = "Stark Petrol";
@@ -425,7 +432,11 @@ var nomeUsuario;
             // var vGWdoCarro = (vGW * 1) * 42;
 
             // Não precisa da Regra de 3, por que não precisa mostrar o preço total
-            
+            // console.log(vAW);
+            // console.log(vGW);
+            // console.log(vAS);
+            // console.log(vGS);
+
             alert(`${nomeUsuario}, é mais barato abastecer com ${gVSa} no posto ${divino} = valor total ${deGracaDivina}`);
         }
 
